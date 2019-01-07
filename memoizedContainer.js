@@ -1,8 +1,8 @@
 const memoizeContainer = (func) => {
   const cache = {};
   return (...args) => {
-    console.log(cache)
     let n = args[0];
+    console.log(n)
     if (n in cache) {
       return cache[n];
     }
