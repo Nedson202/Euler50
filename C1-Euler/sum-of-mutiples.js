@@ -12,4 +12,4 @@ const sumOfMultiples = (nth) => {
 };
 
 const memoizedResult = memoizeContainer(sumOfMultiples);
-performanceMonitor(memoizedResult(1000));
+performanceMonitor(memoizedResult(1000), 10);

@@ -1,7 +1,7 @@
 let start, end;
-const performanceMonitor = (func) => {
+const performanceMonitor = (func, count) => {
   start = new Date().getTime();
-  for (let i = 0; i <= 2; i++) {
+  for (let i = 0; i <= count; i++) {
     console.log(func);
   }
   end = new Date().getTime();
